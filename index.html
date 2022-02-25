@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wildflowers</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // CREDITS XEVANGELIST
+        $(document).ready(function() {
+            var playing = false
+            let audioData = [];
+            var song = new Audio();
+            var CurrentSong = 0;
+            window.onload = load();
+
+            function load() {
+                audioData = [{
+                    name: "Rules",
+                    artist: " Doja Cat",
+                    src: "assets/sample.mp3?raw=true"
+                }];
+                song.src = audioData[CurrentSong].src;
+            }
+
+            function playSong() {
+                var curSong = audioData[CurrentSong];
+                artistname.html(curSong.artist);
+                musicName.html(curSong.name);
+                song.src = curSong.src;
+                song.play({});
+                $("#play").addClass("fa-pause");
+                $("#play").removeClass("fa-play");
+                $("img").addClass("active");
+                $(".player-track").addClass("active");
+            }
+            $("#play").click(function playOrPause() {
+                if (song.paused) {
+                    song.play();
+                    playing = true
+                } else {
+                    song.pause();
+                    playing = false
+                }
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- start of navigation -->
+        <div class="nav"><a "/" title="♡ ♡ ♡ ♡ ♡"><span class="sf sf-flower-1-o"></span><span class="sf sf-flower-1"></span></a><a "/ask" title="☆ ☆ ☆ ☆ ☆"><span class="sf sf-moon-2-o"></span><span class="sf sf-moon-2"></span></a>
+            <div title="about me 𝄞" id="trigger"><span class="sf sf-dragonfly-o"></span><span class="sf sf-dragonfly"></span></div>
+        </div>
+        <!-- start of header -->
+        <div class="header">
+            <div class="header-line"></div>
+            <div class="header-title">
+                <h1>tell me you'll be my baby</h1>
+            </div>
+        </div>
+        <!-- start of sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-png"><img src="https://i.ibb.co/8xRh9L7/pngegg-1.png"></div>
+            <div class="sidebar-bg"></div>
+            <div class="description">she will stand tall on the rooftops of her worries and proclaim into the depth of a starless night:<br />
+                <blockquote style="font-size:102%;">“i will make it through this. by grace i will be <b style="letter-spacing:1px;">alright</b>.”</blockquote>
+            </div>
+        </div>
+        <div class="music" id="play">
+        </div>
+        <!-- start of .popup -->
+        <div class="popup">
+            <div title="close" id="close"><span class="sf sf-cross-2-o"></span><span class="sf sf-cross-2"></span></div>
+            <h1>nashe (1522135253)</h1>
+            <div class="popup-top"></div>
+            <div class="popup-links">
+                <div class="popup-links"><a "/">
+                    xviii
+                </a><a "/">
+                cuban
+                </a><a "/">
+                    dominican
+                </a><a "/">
+                    taken
+                </a><a "/">
+                    us
+                </a><a "/">
+                    florida
+                </a><a "/">
+                    aries
+                </a><a "/">
+                    cheerleader
+                </a><a "/">
+                    book reader
+                </a><a "/">
+                    animal lover
+                </a></div>
+            </div>
+
+            <div class="popup-text">
+                <p>Love is such a powerful force. It’s there for everyone to embrace-that kind of unconditional love for all of humankind. That is the kind of love that impels people to go into the community and try to change conditions for others, to take
+                    risks for what they believe in. Love isn't something natural. Rather it requires discipline, concentration, patience, faith, and the overcoming of narcissism. It isn't a feeling, it is a practice.
+                </p>
+                <p>
+                    사랑에는 항상 약간의 광기가 있습니다. 그러나 광기에는 항상 어떤 이유가 있습니다.</p>
+            </div>
+            <div class="popup-img"><img src="https://i.ibb.co/kXLMByK/pngegg-1-2.png"></div>
+        </div>
+        <!-- end of .popup -->
+        <!-- start of posts -->
+        <div class="entries">
+            <div class="post" id="179893135649">
+                <div class="txt">
+                    <div class="asker">someone once said,</div>
+                    <div class="question">
+                        "Jealousy is a disease, love is a healthy condition. The immature mind often mistakes one for the other, or assumes that the greater the love, the greater the jealousy - in fact, they are almost incompatible; one emotion hardly leaves room for the other."
+                    </div>
+                    <p>- Robert A. Heinlein, 'Stranger In A Strange Land'.</p>
+                </div>
+                <div class="permalink"><a "/">
+            posted 4 days ago
+        </a><a class="reb" "/"><span class="sf sf-reblog"></span></a><br>
+                    <div class="tags"><a "/">#bitchcuero22</a></div>
+                </div>
+            </div>
+            <!-- end of .post -->
+            <div class="post" id="178914464839">
+                <div class="txt">
+                    <div class="title">
+                        모두를 환영합니다 ! 𝄞</div>
+                    <p>My mother told me to be a lady. And for her, that meant be your own person, be independent.<a "/"> This life is mine alone. So I have stopped asking people for directions to places they've never been.</a> Never be bullied into silence.
+                        Never allow yourself to be made a victim. Accept no one’s definition of your life, but define yourself.</p>
+                    <ul>
+                        <li> Today you are you! That is truer than true!</li>
+                        <li>There is no one alive who is you-er than you!</li>
+                        <li>Shout loud, ‘I am lucky to be what I am!...</li>
+                    </ul>
+                    <p>Why should we worry about what others think of us, <a "/">do we have more confidence in their opinions than we do our own?</a> </p>
+                    <blockquote>
+                        <p></p>
+                    </blockquote>
+                    <p>
+                        </a>
+                    </p>
+                </div>
+                <div class="permalink"><a "/">
+            posted 2 months ago with 22,930 notes
+        </a><a class="reb" "/"><span class="sf sf-reblog"></span></a><br></div>
+            </div>
+            <!-- end of .post -->
+        </div>
+        <!-- end of .entries -->
+    </div>
+</body>
+
+</html>
